@@ -19,8 +19,9 @@ const questions = [
 },{ type:"input",
     message:"What tool do you installation ?",
     name:"Installation",
-},{ type:"input",
-    message:"What license do you have ?",
+},{ type:"list",
+    message:"License?",
+    choices:["MIT","ISC","GNUPLv3"]
     name:"License",
 },{ type:"input",
     message:"what is the contributing?",
