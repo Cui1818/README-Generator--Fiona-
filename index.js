@@ -60,10 +60,10 @@ function init() {
 inquirer.prompt(questions)
 .then((answerObj) =>{
 var data = generateMarkdown(answerObj);
-writeToFile("READMe.md",data );
+writeToFile("README.md",data );
 
 })
 }
 
 // function call to initialize program
-//init();
+init();
