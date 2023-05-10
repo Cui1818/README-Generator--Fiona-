@@ -10,31 +10,43 @@ const questions = [
     name:"Title"
 },{
     type:"input",
-    message:"the  descriptionf your project.",
+    message:"the  description of your project.",
     name :"Description"
 },{ 
     type:"input",
     message:"Table of contents.",
-     name:"Table of contents",
-},{ type:"input",
-    message:"What tool do you installation ?",
-    name:"Installation",
+     name:"Table",
+// },{ type:"input",
+//     message:"What tool do you installation ?",
+//     name:"Installation",
 },{ type:"list",
-    message:"License?",
-    choices:["MIT","ISC","GNUPLv3"]
-    name:"License",
-},{ type:"input",
-    message:"what is the contributing?",
-    name:"contirbuting",
-},{ type: "input",
-     message:"What test do you have ?",
-    name:"Tests",
+    message:"What is your license?",
+    choices:["MIT","ISC","GNUPLv3"],
+    name:"contact",
+// },{ type:"input",
+//     message:"what is the contributing?",
+//     name:"contirbuting",
+// },{ type: "input",
+//      message:"What test do you have ?",
+//     name:"Tests",
 },{ type:"confirm",
    message:"Do you have any question?",
-   name:"qestion",
+   name:"question",
 }
 
 ];
+
+/*const answerObj = {Description:"this is a readme",contact:"bhbjsbdh"
+}
+const dog = {name:"Spot",color:"Brown"}
+
+const template = ``
+console.log(`My dog's name is ${dog.name}`)*/
+
+
+// inquirer.prompt({type:"input",name:"location",message:"Where are you located?"}).then(answer=>{
+//     console.log(answer.location)
+// })
 
 // function to write README file
 function writeToFile(fileName, data) {
@@ -48,10 +60,10 @@ function init() {
 inquirer.prompt(questions)
 .then((answerObj) =>{
 var data = generateMarkdown(answerObj);
-writeToFile("READMe.html",data );
+writeToFile("READMe.md",data );
 
 })
 }
 
 // function call to initialize program
-init();
+//init();

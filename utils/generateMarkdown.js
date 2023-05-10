@@ -1,9 +1,6 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
-    var question = "flase";
-    if(data.question){
-        question = "ture"
-    }
+  //  var question = 
   return `
   <!DOCTYPE html>
   <html lang="en">
@@ -22,8 +19,9 @@ function generateMarkdown(data) {
                   <div class="card-body">
                       <h5 class="card-title">${data.title}</h5>
                       <p class="card-text">Is ${data.description} years old</p>
-                      <p class="card-text">Favorite color is ${data.tablet}</p>
-                      <p class="card-text">Is ${emotion}</p>
+                      <p class="card-text">Favorite color is ${data.table}</p>
+                      <p class="card-text">Favorite color is ${data.contact}</p>
+                      <p class="card-text">Is ${data.questio}</p>
                   </div>
               </div>
           </div>

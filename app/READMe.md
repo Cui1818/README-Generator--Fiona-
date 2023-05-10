@@ -1,5 +1,5 @@
-# README-Generator--Fiona-
-- What was your motivation?
+
+What was your motivation?
 
 - Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
 - What problem does it solve?
