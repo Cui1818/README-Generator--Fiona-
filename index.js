@@ -1,6 +1,6 @@
 const fs = require("fs");
-const path = require('path');
-const inquirer = require("inquirer");
+ const path = require('path');
+ const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 
 // array of questions for user
@@ -49,20 +49,38 @@ console.log(`My dog's name is ${dog.name}`)*/
 // })
 
 // function to write README file
-function writeToFile(fileName, data) {
-fs.writeFileSync(
- path.join(__dirname,"app",fileName),   
-)
+// function writeToFile(fileName, data) {
+// fs.writeFileSync(
+//  path.join(__dirname,"app",fileName),   
+// )
+// }
+//function to write README file
+function writeFile(fileName,data){
+fs.writeFile(fileName,data,function(err){
+    console.log(fileName)
+    console.log(data)
+if(err){
+return console.log(err)
+}else{console.log("success")
 }
-
-// function to initialize program
-function init() {
-inquirer.prompt(questions)
-.then((answerObj) =>{
-var data = generateMarkdown(answerObj);
-writeToFile("README.md",data );
-
 })
+}
+// function to initialize program
+// function init() {
+// inquirer.prompt(questions)
+// .then((answerObj) =>{
+// var data = generateMarkdown(answerObj);
+// writeToFile("README.md",data );
+
+// })
+// }
+
+function init(){
+ inquirer.prompt(questions)
+ .then(function(data){
+ writeToFile("README.md",generateMarkdown(data));
+ console.log(data)
+ })
 }
 
 // function call to initialize program
