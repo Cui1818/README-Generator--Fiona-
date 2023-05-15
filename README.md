@@ -1,12 +1,9 @@
 What is the title of the project ?
           undefined
           Description 
-          Install the npm inquier initialize project use dependencies and investigate the content of package.json
+          aa
           if your README is long, add a table of contents to make it easy for users to find what they need.
-
-   
-
-         Table of Contents 
+     Table of Contents 
          undefined
          What is your License ?
          MIT
