@@ -1,6 +1,6 @@
-This project title READ ME
+This project title Read me
 
-CREATE A READ ME
+abc
 
 
 - [Installation](#installation)
@@ -9,7 +9,7 @@ CREATE A READ ME
 - [License](#license)
 
 # Installation 
-This projest has installed NPM .
+This projest has installed abb.
 This project has MIT license.
 
 

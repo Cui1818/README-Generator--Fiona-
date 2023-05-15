@@ -39,35 +39,8 @@ const questions = [
 
 ];
 
-/*const answerObj = {Description:"this is a readme",contact:"bhbjsbdh"
-}
-const dog = {name:"Spot",color:"Brown"}
-
-const template = ``
-console.log(`My dog's name is ${dog.name}`)*/
 
 
-// inquirer.prompt({type:"input",name:"location",message:"Where are you located?"}).then(answer=>{
-//     console.log(answer.location)
-// })
-
-// function to write README file
-// function writeToFile(fileName, data) {
-// fs.writeFileSync(
-//  path.join(__dirname,"app",fileName),   
-// )
-// }
-//function to write README file
-// function writeFile(fileName,data){
-// fs.writeFile(fileName,data,function(err){
-//     console.log(fileName)
-//     console.log(data)
-// if(err){
-// return console.log(err)
-// }else{console.log("success")
-// }
-// })
-// }
 //function to initialize program
 function init() {
     inquirer.prompt(questions)
@@ -91,3 +64,4 @@ function init() {
 
 // function call to initialize program
 init();
+
