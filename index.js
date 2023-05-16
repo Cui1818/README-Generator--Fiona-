@@ -15,7 +15,7 @@ const questions = [
         name: "description"
     }, {
         type: "input",
-        message: "What tool do you installation ?",
+        message: "What does the user need to install ?",
         name: "installation",
     }, {
          type:"list",
@@ -24,18 +24,18 @@ const questions = [
         name:"license",
     }, {
         type: "input",
-        message: "what is the contributing?",
-        name: "contirbuting",
+        message: "How is the app used?",
+        name: "usage",
     }, {
         type: "input",
         message: "What test do you have ?",
         name: "tests",
     }
-    // , {
-    //     type: "confirm",
-    //     message: "Do you have any question?",
-    //     name: "question",
-    // }
+    , {
+        type: "input",
+        message: "What is your github username?",
+        name: "question",
+    }
 
 ];
 

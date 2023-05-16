@@ -6,18 +6,22 @@ function generateMarkdown(data) {
 ${data.description}
 
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
+[Installation](#installation)
+[Usage](#usage)
+[Credits](#credits)
+[License](#license)
 
 # Installation 
-This projest has installed ${data.installation}.
+The following necessary dependencies must be installed for this app ${data.installation}.
+# License
 This project has ${data.license} license.
-
-
-Do you have any questions about this project ?(Y/N)
+# Usage 
+In order to use this app,${data.usage}
+# Test
 ${data.tests}
+
+# Github username
+${data.question}
 
          
 
